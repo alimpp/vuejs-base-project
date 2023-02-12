@@ -3,7 +3,7 @@
     class="desktop-nav"
     :class="{
       nav_dark_mode_theme: watchTheme === 'dark',
-      _nav_light_mode_theme: watchTheme === 'light',
+      nav_light_mode_theme: watchTheme === 'light',
     }"
   >
     <div class="logo-container">
