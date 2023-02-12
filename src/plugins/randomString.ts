@@ -1,3 +1,3 @@
 export const randomString = (length: number) => {
-  return Math.random().toString(20).substr(2,length)
+  return Math.random().toString(36).substr(2,length)
 }
