@@ -3,13 +3,14 @@
     <desktopNav class="desktop-size" />
     <mobileNav class="mobile-size" />
     <router-view></router-view>
+    <applicationFooter />
   </div>
 </template>
 
 <script setup>
 import mobileNav from "@/layout/base/mobileNav";
 import desktopNav from "@/layout/base/desktopNav";
-import footer from "@/layout/base/footer";
+import applicationFooter from '@/layout/base/applicationFooter'
 </script>
 
 <style lang="scss" scoped>
@@ -26,7 +27,7 @@ import footer from "@/layout/base/footer";
       display: none;
     }
     .mobile-size {
-      display: inline;
+      display: flex;
     }
   }
 }

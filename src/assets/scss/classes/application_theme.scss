@@ -11,13 +11,13 @@
     transition: 0.3s;
 }
 
-.desktop_nav_dark_mode_theme{
-    background-color: var(--desktop-nav-dark-mode);
+.nav_dark_mode_theme{
+    background-color: var(--nav-dark-mode);
     color: var(--light-);
     transition: 0.3s;
 }
-.desktop_nav_light_mode_theme{
-    background-color: var(--desktop-nav-light-mode);
+.nav_light_mode_theme{
+    background-color: var(--nav-light-mode);
     color: var(--dark-);
     transition: 0.3s;
 }
