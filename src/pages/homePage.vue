@@ -8,10 +8,10 @@
 </template>
 
 <script setup>
-import { computed } from "vue";
+import { computed , onMounted } from "vue";
 import { randomString } from "@/plugins/randomString";
 import { randomNumber } from "@/utils/randomNumber";
-
+import {SuccessNotification} from '@/services/applicationNotification'
 const RandomString = computed(() => {
   return randomString(1000);
 });
@@ -19,6 +19,11 @@ const RandomString = computed(() => {
 const RandomNumber = computed(() => {
   return randomNumber(100000000);
 });
+
+onMounted(() => {
+  console.log("jhghg");
+  SuccessNotification(3000 , 'Welcome to vue app...!' , 'bottom-center')
+})
 </script>
 
 <style lang="scss" scoped></style>

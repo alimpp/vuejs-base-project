@@ -28,9 +28,6 @@ const watchTheme = computed(() => {
   return theme.themeStatus;
 });
 
-onMounted(() => {
-  userProfile.refreshApplication();
-});
 </script>
 
 <style lang="scss" scoped>
