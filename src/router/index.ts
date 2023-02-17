@@ -13,6 +13,11 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import("@/pages/homePage.vue"),
       },
     ]
+  },
+  {
+    path: "/:pathMatch(.*)*",
+    name : "error",
+    component: () => import("@/layout/error/index.vue"),
   }
 ]
 
